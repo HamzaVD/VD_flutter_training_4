@@ -1,16 +1,17 @@
-# weatherapp
+# VD_flutter_training_4
 
-A new Flutter project.
+## Weather App with network call
 
-## Getting Started
+## Acknowledgement
+Thanks to the [Open Weather Map](https://openweathermap.org/current) for their free weather data API which I used in this project for getting weather data. Although the number of requests for free are limited but get the task done for demo purposes.
 
-This project is a starting point for a Flutter application.
+## About project
+This project demonstrates calling of network calls and displaying data on the user interface. You can also observe smart usage of async and wait keywords. 
+The final thing I would like to mention is JSON parsing.
 
-A few resources to get you started if this is your first Flutter project:
+# Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Fetching Data
+![](images/image_1.jpeg)
+## Data Loaded
+![](images/image_2.jpeg)
