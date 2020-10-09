@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weatherapp/weather_model.dart';
 import 'package:weatherapp/weather_service.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(MyApp());
@@ -45,13 +46,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.black,
               ),
               onPressed: () async {
-                await WeatherService.getWeatherData('Karachi');
+                await WeatherService.getWeatherData('Karachi', http.Client());
               },
             ),
           ],
         ),
         body: FutureBuilder<WeatherResponse>(
-            future: WeatherService.getWeatherData('Karachi'),
+            future: WeatherService.getWeatherData('Karachi', http.Client()),
             builder: (context, snapshot) {
               return snapshot.hasData
                   ? weatherWidgetBody(snapshot)
